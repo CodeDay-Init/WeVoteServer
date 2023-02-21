@@ -145,6 +145,7 @@ def search_all_view(request):  # searchAll
         status = results['status']
     else:
         status += results['status']
+        print("Since search results returns false, the default is UNABLE_TO_FIND_ANY_SEARCH_RESULTS is printed")
 
     json_data = {
         'status':                   status,
